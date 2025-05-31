@@ -12,12 +12,11 @@ class TestLeaf(unittest.TestCase):
         }
 
         node2 = LeafNode("a","Click Me!",test_props)
-        print(node2)
-
         self.assertEqual(node2.to_html(), "<a href=\"www.goat.se\" type=\"this is bogus\">Click Me!</a>")
         
         with self.assertRaises(ValueError) as context:
             node3 = LeafNode(None,None,test_props)
+            node3.to_html()
 
         self.assertEqual(str(context.exception),"All nodes must have a value")
     
