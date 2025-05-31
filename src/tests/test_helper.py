@@ -10,8 +10,6 @@ class TestHelper(unittest.TestCase):
         self.assertEqual(html_node.tag, None)
         self.assertEqual(html_node.value, "This is a text node")
         self.assertEqual(html_node.to_html(),"This is a text node")
-
-        
     
     def text_bold(self):
         node = TextNode("This is a bold node", TextType.BOLD)
@@ -55,3 +53,23 @@ class TestHelper(unittest.TestCase):
         with self.assertRaises(Exception) as context:
             text_node_to_html_node(node)
         self.assertIn("Invalid text node type", str(context.exception))
+
+    def test_split_nodes_delimiter(self):
+        expected_output = [
+            TextNode("This is text with a ", TextType.TEXT),
+            TextNode("code block", TextType.CODE),
+            TextNode(" word", TextType.TEXT),
+            ]
+        node = TextNode("This is text with a `code block` word", TextType.TEXT)
+        new_nodes = split_nodes_delimiter([node], "`", TextType.CODE)
+        self.assertEqual(new_nodes,expected_output)
+
+        with self.assertRaises(Exception) as context:
+            node = TextNode("This is text with **Bold words", TextType.TEXT)
+            new_nodes = split_nodes_delimiter([node], "**", TextType.CODE)
+        self.assertIn("Invalid delimiter number, please check your syntax", str(context.exception))
+
+        with self.assertRaises(Exception) as context:
+            node = TextNode("This is text with **Bold words", TextType.TEXT)
+            new_nodes = split_nodes_delimiter([node], "", TextType.ITALIC)
+        self.assertIn("Invalid text type or delimiter", str(context.exception))
