@@ -20,3 +20,4 @@ class HTMLNode():
     
     def __repr__(self):
         return f" HTML Tag: {self.tag} \n Value:{self.value} \n Children: {self.children} \n Props: {str(self.props)}"
+
