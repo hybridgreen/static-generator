@@ -3,7 +3,7 @@ import unittest
 from textnode import *
 
 class TestTextNode(unittest.TestCase):
-    def test_ed(self):
+    def test_textNode(self):
         node = TextNode("This is the first node", TextType.BOLD)
         node2 = TextNode("This is the second node", TextType.BOLD)
         node3 = TextNode("This is the first node", TextType.BOLD)

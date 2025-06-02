@@ -3,7 +3,7 @@ import unittest
 from htmlnode import *
 
 class TestHTMLNode(unittest.TestCase):
-    def test(self):
+    def test_html_node(self):
         node1 = HTMLNode("div", None ,["p","a","h1"],None )
         node2 = HTMLNode("a","Link",None, {"href":"www.get_it.com", "target":"_blank"})
         

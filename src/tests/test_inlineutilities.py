@@ -2,7 +2,7 @@ import unittest
 from textnode import *
 from utility import *
 
-class TestHelper(unittest.TestCase):
+class Test_Inline_utilities(unittest.TestCase):
 
     def test_text(self):
         node = TextNode("This is a text node", TextType.TEXT)
@@ -199,12 +199,4 @@ class TestHelper(unittest.TestCase):
         TextType.TEXT,
         )
         new_nodes = split_nodes_link([node])
-        self.assertListEqual(
-        [
-            TextNode("This is text with a link ", TextType.TEXT),
-            TextNode("image", TextType.LINK, "https://i.imgur.com/zjjcJKZ.png"),
-            TextNode(" and another ", TextType.TEXT),
-            TextNode("second image", TextType.LINK, "https://i.imgur.com/3elNhQu.png")
-        ],
-        new_nodes
-        )
+        self.assertListEqual([node],new_nodes)

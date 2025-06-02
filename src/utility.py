@@ -2,6 +2,7 @@ from textnode import *
 from leafnode import *
 import re
 
+# ----------------------Nodes Utility ----------------------
 def text_node_to_html_node(text_node):
     match text_node.text_type:
         case TextType.TEXT:
@@ -83,8 +84,20 @@ def split_nodes_link(old_nodes):
             split_node = re.split(r"(\[.*?\]\(.*?\))", node.text)
             for index, sub_node in enumerate(split_node):
                 if index % 2== 0 and sub_node != "":
-                    new_nodes.appendx(TextNode(sub_node, TextType.TEXT))
+                    new_nodes.append(TextNode(sub_node, TextType.TEXT))
                 elif sub_node != "":
                     link_md = extract_markdown_links(sub_node)
                     new_nodes.append(TextNode(link_md[0][0], TextType.LINK, link_md[0][1]))
     return new_nodes
+
+# ----------------------Blocks Utility ----------------------
+
+def markdown_to_blocks(markdown):
+    blocks =  markdown.split("\n\n")
+    cleaned_blocks = []
+    for block in blocks:
+        if block !="":
+            cleaned_blocks.append(block.strip())
+    return cleaned_blocks
+
+        
