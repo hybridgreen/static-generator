@@ -1,6 +1,6 @@
 # Georgia Smith Fan Club
 
-![JRR Tolkien sitting](/images/tolkien.png)
+![JRR Tolkien sitting](/images/tolkien.jpg)
 
 Here's the deal, **I really like Georgia Smith**.
 
