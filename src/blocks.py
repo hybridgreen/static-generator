@@ -67,14 +67,15 @@ def markdown_to_html_node(markdown):
                 text = text.strip()
                 content.append(LeafNode(f"h{h_count}", text, None))
             case BlockType.quote:
-                text = text = re.sub(r"^(#{1,6})", "", block)
-                text = text.strip()
-                content.append(ParentNode("blockquote",text_to_children(block),None))
+                text = block.replace(">", "").strip()
+                content.append(ParentNode("blockquote",text_to_children(text),None))
             case BlockType.ul:
-                text = re.sub(r"^-", "", block)
+                text = block.replace("- ", "<li>")
+                text = text.replace("\n", "</li>")
                 content.append(ParentNode("ul",text_to_children(text),None))
             case BlockType.ol:
-                text = re.sub(r"^([\d]. )", "", block)
+                text = re.sub(r"^([\d]. )", "<li>", block, 0, re.MULTILINE)
+                text = text.replace("\n", "</li>")
                 content.append(ParentNode("ol",text_to_children(text), None))
 
             case BlockType.code:

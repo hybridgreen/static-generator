@@ -55,7 +55,25 @@ def generate_page(from_path, template_path, dest_path):
     index = open(index_path, 'w')
     index.write(template)
     index.close()
+    pass
 
+def generate_pages_recursively(content_dir, template_path, dest_dir):
+    
+    content = os.listdir(content_dir)
+
+    for item in content:
+        item_path = path.join(content_dir, item)
+        print("main.py/generate_recursive: " + item_path)
+        if path.isfile(item_path):
+            generate_page(item_path, template_path, dest_dir)
+        else:
+            dest_sub_dir = path.join(dest_dir, item)
+            try:
+                os.mkdir(dest_sub_dir)
+            except:
+                print("Directory already exists. Continuing")
+            
+            generate_pages_recursively(item_path, template_path, dest_sub_dir)
     pass
 
 def main():
@@ -64,6 +82,7 @@ def main():
     static_dir = path.join(project_dir,"static")
     public_dir = path.join(project_dir,"public")
     index_md = path.join(project_dir,"content/index.md")
+    content_dir_path = path.join(project_dir, "content")
     template_path = path.join(project_dir,"template.html")
 
     # Create a clean public directory
@@ -78,7 +97,9 @@ def main():
         raise Exception("Path error")
     
 
-    generate_page(index_md, template_path,public_dir)
+    #generate_page(index_md, template_path,public_dir)
+    #print("main.py: " + content_dir_path)
+    generate_pages_recursively(content_dir_path, template_path, public_dir)
     pass
 
 main()
