@@ -1,130 +1,186 @@
-body {
-  background-color: #1f1c25;
-  color: #f0e6d1;
-  font-family: "Luminari", "Georgia", serif;
-  line-height: 1.7;
+/* ====== RESET ====== */
+* {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #eaeaea;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Main content stays centered */
+.content {
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-b {
-  font-weight: 900;
+/* ====== TYPOGRAPHY ====== */
+h1, h2, h3, h4, h5, h6 {
+  color: #1d1d1f;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-shadow: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #dda15e;
-  margin-top: 24px;
-  margin-bottom: 16px;
-  text-shadow: 2px 2px 4px #000;
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.6rem; }
+h4, h5, h6 { font-size: 1.2rem; }
+
+p {
+  margin-bottom: 1em;
 }
 
-h1 {
-  font-size: 2.5em;
+b, strong {
+  font-weight: 600;
 }
 
-h2 {
-  font-size: 2em;
+/* ====== NAVBAR ====== */
+.navbar {
+  width: 100%;
+  background-color: #1d1d1f;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
 }
 
-h3 {
-  font-size: 1.5em;
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-h4,
-h5,
-h6 {
-  font-size: 1.2em;
+.nav li {
+  display: inline;
 }
 
-a {
-  color: #e0a96d;
+.nav a {
+  color: #f5f5f7;
   text-decoration: none;
-  border-bottom: 2px solid #e0a96d;
+  font-weight: 500;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+  background-color: #2f2f31;
+  color: #ffffff;
+}
+
+/* GitHub Icon */
+.nav-icon img {
+  height: 24px;
+  width: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease, filter 0.2s ease;
+  vertical-align: middle;
+}
+
+.nav-icon img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+}
+
+.nav-icon a {
+  display: inline-block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+}
+
+/* ====== LINKS ====== */
+a {
+  color: #0071e3;
+  text-decoration: none;
+  border-bottom: 1px solid #0071e3;
+  transition: border-color 0.2s ease;
 }
 
 a:hover {
-  color: #f4a261;
-  border-color: #f4a261;
+  border-color: transparent;
 }
 
-ul,
-ol {
-  padding-left: 30px;
+/* ====== LISTS ====== */
+ul, ol {
+  padding-left: 1.5em;
+  margin: 1em 0;
 }
 
+/* ====== CODE BLOCKS ====== */
 code {
-  background-color: #3c3c42;
+  background-color: #eaeaea;
+  border-radius: 4px;
+  padding: 0.2em 0.5em;
+  font-family: Menlo, monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: #eaeaea;
+  padding: 1em;
   border-radius: 6px;
-  color: #e9c46a;
-  padding: 0.4em 0.6em;
-  font-family: "Courier New", monospace;
+  overflow: auto;
+  font-family: Menlo, monospace;
+  font-size: 0.9em;
+  margin: 1em 0;
 }
 
 pre code {
   padding: 0;
+  background: none;
 }
 
-pre {
-  background-color: #3c3c42;
-  border-radius: 6px;
-  padding: 1em;
-  overflow: auto;
-  box-shadow: 2px 2px 6px #000;
-}
-
+/* ====== BLOCKQUOTES ====== */
 blockquote {
-  background-color: #2e2c35;
-  border-left: 4px solid #8d99ae;
-  padding-left: 2em;
-  margin-left: 0;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-right: 0.5em;
-  color: #ddd;
+  border-left: 4px solid #0071e3;
+  padding: 1em;
+  margin: 1em 0;
+  background-color: #f0f0f5;
+  color: #333;
   font-style: italic;
 }
 
+/* ====== IMAGES ====== */
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 6px;
-  border: 3px solid #3c3c42;
-  box-shadow: 3px 3px 6px #000;
+  border-radius: 8px;
+  border: none;
+  box-shadow: none;
 }
 
+/* ====== SCROLLBAR (WEBKIT) ====== */
 ::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1f1c25;
-  border-radius: 6px;
+  background: #eaeaea;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3c3c42;
-  border-radius: 6px;
-  border: 3px solid #1f1c25;
+  background-color: #ccc;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #5a5466;
-}
-
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #3c3c42 #1f1c25;
+  background-color: #999;
 }
 
 ::-webkit-scrollbar-corner {
-  background: #1f1c25;
+  background: #eaeaea;
 }

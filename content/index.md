@@ -2,43 +2,16 @@
 
 ![Yasser Yaya-Oye](/yass.yayao)
 
-> "I am in fact a Hobbit in all but size."
->
-> -- J.R.R. Tolkien
+Hi 👋 I'm Yasser Yaya-Oye
 
-## Blog posts
+- 🌍 I'm a driven Engineer with 5+ years experience designing data-center solutions.
+- 🤝 I have strong record of leading teams, streamlining processes, and delivering results under pressure. 
+- 🧠 I've been building my Back-End dev skills in Python and Go with [Boot.Dev](https://www.boot.dev/) and really enjoying it. 
 
-- [Why Glorfindel is More Impressive than Legolas](/blog/glorfindel)
-- [Why Tom Bombadil Was a Mistake](/blog/tom)
-- [The Unparalleled Majesty of "The Lord of the Rings"](/blog/majesty)
+## Latest Blog Posts
 
-## Reasons I like Tolkien
+- [Blog post 1](/blog/post1)
+- [Blog post 2](/blog/post2)
+- [Blog post 3](/blog/post3)
 
-- You can spend years studying the legendarium and still not understand its depths
-- It can be enjoyed by children and adults alike
-- Disney _didn't ruin it_ (okay, but Amazon might have)
-- It created an entirely new genre of fantasy
-
-## My favorite characters (in order)
-
-1. Gandalf
-2. Bilbo
-3. Sam
-4. Glorfindel
-5. Galadriel
-6. Elrond
-7. Thorin
-8. Sauron
-9. Aragorn
-
-Here's what `elflang` looks like (the perfect coding language):
-
-```
-func main(){
-    fmt.Println("Aiya, Ambar!")
-}
-```
-
-Want to get in touch? [Contact me here](/contact).
-
-This site was generated with a custom-built [static site generator](https://github.com/hybridgreen/static-generator).
+This landing page was generated with a custom-built [static site generator](https://github.com/hybridgreen/static-generator/tree/main).

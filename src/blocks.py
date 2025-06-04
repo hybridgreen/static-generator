@@ -82,5 +82,5 @@ def markdown_to_html_node(markdown):
                 code =LeafNode("code",text.lstrip(), None)
                 content.append(ParentNode("pre",[code], None))
 
-    return ParentNode("div",content, {"class":"container"})
+    return ParentNode("div",content, None)
 
