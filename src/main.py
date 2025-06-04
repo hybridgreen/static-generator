@@ -28,14 +28,33 @@ def extract_title(markdown):
 def generate_page(from_path, template_path, dest_path):
     print(f"Generating page from:\n -{from_path}\n -to {dest_path}\n -using {template_path}")
 
-    md_file = open(from_path)
-    markdown = md_file.read()
+    with open(from_path) as md_file:
+        markdown = md_file.read()
+        print ("Markdown file read: Success!")
     md_file.close()
 
-    tp_file = open(template_path)
-    template = tp_file.read()
+    with open(template_path) as tp_file:
+        template = tp_file.read()
+        print ("Template file read: Success!")
+    tp_file.close()
 
-    
+    print("Extracting Markdown from file")
+    try:
+        title = extract_title(markdown)
+        content = blocks.markdown_to_html_node(markdown).to_html()
+        template = template.replace("{{ Title }}", title)
+        template = template.replace("{{ Content }}", content)
+        print ("Markdown extraction: Success!")
+    except Exception as e:
+        print("Markdown extraction: Failed")
+        print(e)
+
+    if not path.exists(dest_path):
+        os.mkdir(dest_path)
+    index_path = path.join(dest_path, "index.html")
+    index = open(index_path, 'w')
+    index.write(template)
+    index.close()
 
     pass
 
@@ -44,6 +63,8 @@ def main():
     project_dir = os.getcwd()
     static_dir = path.join(project_dir,"static")
     public_dir = path.join(project_dir,"public")
+    index_md = path.join(project_dir,"content/index.md")
+    template_path = path.join(project_dir,"template.html")
 
     # Create a clean public directory
     rmtree(public_dir)
@@ -55,6 +76,9 @@ def main():
     else: 
         print("Path error")
         raise Exception("Path error")
+    
+
+    generate_page(index_md, template_path,public_dir)
     pass
 
 main()
