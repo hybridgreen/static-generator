@@ -17,12 +17,27 @@ def copy_to_public(source, dest):
     pass
 
 def extract_title(markdown):
+    if not re.search(r"^(#\s)", markdown):
+        raise Exception("Invalid markdown- Page must have a # Title")
+    
     md_blocks = blocks.markdown_to_blocks(markdown) #to be deleted
     for block in md_blocks:
-        if re.search(r"^#/s", block):
-            return block[:1].strip()
-        else:
-            raise Exception("Invalid markdown- Page must have a #Title")
+        if re.search(r"^(#\s)", block):
+            return block[1:].strip()
+            
+def generate_page(from_path, template_path, dest_path):
+    print(f"Generating page from:\n -{from_path}\n -to {dest_path}\n -using {template_path}")
+
+    md_file = open(from_path)
+    markdown = md_file.read()
+    md_file.close()
+
+    tp_file = open(template_path)
+    template = tp_file.read()
+
+    
+
+    pass
 
 def main():
     #Set working directory and establish project structure

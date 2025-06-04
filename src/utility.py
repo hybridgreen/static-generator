@@ -43,7 +43,7 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
                 raise Exception("Invalid delimiter number, please check your syntax")
             
             for index, sub_node in enumerate(split_node):
-                if index % 2 == 0 :
+                if index % 2 == 0:
                     new_nodes.append(TextNode(sub_node, TextType.TEXT))
                 else:
                     new_nodes.append(TextNode(sub_node, text_type))
@@ -57,7 +57,7 @@ def extract_markdown_links(text):
     return re.findall(r"(?<!\!)\[(.*?)\]\((.*?)\)", text)
 
 def split_nodes_image(old_nodes):
-    #"This is text with a image ![to boot dev](https://www.boot.dev) and ![to youtube](https://www.youtube.com/@bootdotdev)"
+
     new_nodes = []
     for node in old_nodes:
         if extract_markdown_images(node.text) == []:
@@ -75,7 +75,7 @@ def split_nodes_image(old_nodes):
     
 
 def split_nodes_link(old_nodes):
-    #"This is text with a link [to boot dev](https://www.boot.dev) and [to youtube](https://www.youtube.com/@bootdotdev)"
+
     new_nodes = []
     for node in old_nodes:
         if extract_markdown_links(node.text) == []:
@@ -89,15 +89,5 @@ def split_nodes_link(old_nodes):
                     link_md = extract_markdown_links(sub_node)
                     new_nodes.append(TextNode(link_md[0][0], TextType.LINK, link_md[0][1]))
     return new_nodes
-
-# ----------------------Blocks Utility ----------------------
-
-def markdown_to_blocks(markdown):
-    blocks =  markdown.split("\n\n")
-    cleaned_blocks = []
-    for block in blocks:
-        if block !="":
-            cleaned_blocks.append(block.strip())
-    return cleaned_blocks
 
         
