@@ -1,5 +1,5 @@
 from textnode import *
-from leafnode import * 
+from htmlnode import * 
 import os , re, blocks, utility
 from os import path
 from shutil import copy, rmtree
@@ -91,7 +91,6 @@ def main():
     project_dir = os.getcwd()
     static_dir = path.join(project_dir,"static")
     build_dir = path.join(project_dir,"docs")
-    index_md = path.join(project_dir,"content/index.md")
     content_dir_path = path.join(project_dir, "content")
     template_path = path.join(project_dir,"template.html")
 

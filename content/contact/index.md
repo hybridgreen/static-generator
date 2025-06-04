@@ -1,9 +1,6 @@
-# Contact the Author
+# Let's talk!
 
-[< Back Home](/)
+Get in touch:
 
-Give me a call anytime to chat about Tolkien!
-
-`555-555-5555`
-
-**"Váya márië."**
+- ![mail-icon](/images/mail.svg) By email : y.yayaoye@gmail.com
+- ![Phone-icon](/images/smartphone.svg) or by phone : +44(0)7591-811891

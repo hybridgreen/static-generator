@@ -1,7 +1,6 @@
 import re, functools, utility
 from enum import Enum
-from parentnode import ParentNode
-from leafnode import LeafNode
+from htmlnode import ParentNode, LeafNode
 from textnode import TextNode, TextType
 
 
