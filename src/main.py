@@ -67,7 +67,6 @@ def generate_pages_recursively(content_dir, template_path, dest_dir, basepath):
 
     for item in content:
         item_path = path.join(content_dir, item)
-        print("main.py/generate_recursive: " + item_path)
         if path.isfile(item_path):
             generate_page(item_path, template_path, dest_dir, basepath)
         else:
