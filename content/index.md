@@ -1,8 +1,8 @@
-# Tolkien Fan Club
+# Georgia Smith Fan Club
 
 ![JRR Tolkien sitting](/images/tolkien.png)
 
-Here's the deal, **I like Tolkien**.
+Here's the deal, **Georgia Smith**.
 
 > "I am in fact a Hobbit in all but size."
 >
