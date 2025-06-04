@@ -2,7 +2,7 @@
 
 ![JRR Tolkien sitting](/images/tolkien.png)
 
-Here's the deal, **Georgia Smith**.
+Here's the deal, **I really like Georgia Smith**.
 
 > "I am in fact a Hobbit in all but size."
 >
