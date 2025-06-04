@@ -1,7 +1,6 @@
 dev_env/
 markdown-cheat-sheet.md
 test_result.txt
-public/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
