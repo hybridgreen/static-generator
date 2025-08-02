@@ -1,17 +1,46 @@
-# Yasser Olayemi
+# Yasser Yaya-Oye – Software Engineer
+I want to build software that solves real-world problems with precision and clarity.
+---
 
-![Yasser Yaya-Oye](/yass.yayao)
+## About
 
-Hi 👋 I'm Yasser Yaya-Oye
+Originally trained as an Electrical Engineer, I transitioned into software development after discovering the power of automation and systems thinking. I bring five years of technical delivery experience, a strong technical foundation, and a growing focus on backend engineering with in Python and Typescript.
 
-- 🌍 I'm a driven Engineer with 5+ years experience designing data-center solutions.
-- 🤝 I have strong record of leading teams, streamlining processes, and delivering results under pressure. 
-- 🧠 I've been building my Back-End dev skills in Python and Go with [Boot.Dev](https://www.boot.dev/) and really enjoying it. 
+Now based in Tokyo, I'm building tools, contributing to open-source, and deepening my understanding of scalable, maintainable web architecture.
 
-## Latest Blog Posts
+---
 
-- [Blog post 1](/blog/post1)
-- [Blog post 2](/blog/post2)
-- [Blog post 3](/blog/post3)
+## Current Focus
+
+- Backend systems in **Python** and **TypeScript**
+- Continuous integration with **GitHub Actions**
+- Writing robust, testable code with **PyTest**
+
+---
+
+## Projects
+
+### [TrakTiv](https://github.com/hybridgreen/traktiv)
+A wellness planning tool that integrates training load, recovery, and productivity into a single dashboard.  
+Built with NiceGUI and Python to streamline planning and reduce cognitive fatigue.
+
+---
+
+## Skills
+
+**Languages:** Python, TypeScript, JavaScript, C, SQL  
+**Frameworks:** Django, NiceGUI  
+**Tools:** Git, GitHub Actions, Playwright, MySQL  
+**Systems:** Linux, MacOS  
+**Soft skills:** Cross-functional collaboration, technical writing, documentation
+
+---
+
+## Contact
+
+📧 [y.yayaoye@gmail.com](mailto:y.yayaoye@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/yayaoye)  
+💻 [GitHub](https://github.com/hybridgreen)
+
 
 This landing page was generated with a custom-built [static site generator](https://github.com/hybridgreen/static-generator/tree/main).
