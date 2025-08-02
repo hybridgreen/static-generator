@@ -2,7 +2,6 @@
 
 I want to build software that solves real-world problems with precision and clarity.
 
----
 
 ## About
 
@@ -10,15 +9,11 @@ Originally trained as an Electrical Engineer, I transitioned into software devel
 
 Now based in Tokyo, I'm building tools, contributing to open-source, and deepening my understanding of scalable, maintainable web architecture.
 
----
-
 ## Current Focus
 
 - Backend systems in **Python** and **TypeScript**
 - Continuous integration with **GitHub Actions**
 - Writing robust, testable code with **PyTest**
-
----
 
 ## Projects
 
@@ -28,8 +23,6 @@ A wellness planning tool that integrates training load, recovery, and productivi
 Built with NiceGUI and Python to streamline planning and reduce cognitive fatigue.
 [TrakTiv](https://github.com/hybridgreen/traktiv)
 
----
-
 ## Skills
 
 **Languages:** Python, TypeScript, JavaScript, C, SQL  
@@ -37,8 +30,6 @@ Built with NiceGUI and Python to streamline planning and reduce cognitive fatigu
 **Tools:** Git, GitHub Actions, Playwright, MySQL  
 **Systems:** Linux, MacOS  
 **Soft skills:** Cross-functional collaboration, technical writing, documentation
-
----
 
 ## Contact
 
