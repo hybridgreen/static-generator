@@ -1,5 +1,7 @@
 # Yasser Yaya-Oye – Software Engineer
+
 I want to build software that solves real-world problems with precision and clarity.
+
 ---
 
 ## About
@@ -20,9 +22,11 @@ Now based in Tokyo, I'm building tools, contributing to open-source, and deepeni
 
 ## Projects
 
-### [TrakTiv](https://github.com/hybridgreen/traktiv)
+### Traktiv
+
 A wellness planning tool that integrates training load, recovery, and productivity into a single dashboard.  
 Built with NiceGUI and Python to streamline planning and reduce cognitive fatigue.
+[TrakTiv](https://github.com/hybridgreen/traktiv)
 
 ---
 
