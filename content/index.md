@@ -2,7 +2,6 @@
 
 I want to build software that solves real-world problems with precision and clarity.
 
-
 ## About
 
 Originally trained as an Electrical Engineer, I transitioned into software development after discovering the power of automation and systems thinking. I bring five years of technical delivery experience, a strong technical foundation, and a growing focus on backend engineering with in Python and Typescript.
