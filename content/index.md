@@ -12,23 +12,23 @@ Now based in Tokyo, I'm building tools, contributing to open-source, and deepeni
 
 - Backend systems in **Python** and **TypeScript**
 - Continuous integration with **GitHub Actions**
-- Writing robust, testable code with **PyTest**
+- Writing robust code with **UnitTest**
 
 ## Projects
 
 ### Traktiv
-
+[TrakTiv](https://github.com/hybridgreen/traktiv)
 A wellness planning tool that integrates training load, recovery, and productivity into a single dashboard.  
 Built with NiceGUI and Python to streamline planning and reduce cognitive fatigue.
-[TrakTiv](https://github.com/hybridgreen/traktiv)
+
 
 ## Skills
 
-**Languages:** Python, TypeScript, JavaScript, C, SQL  
-**Frameworks:** Django, NiceGUI  
-**Tools:** Git, GitHub Actions, Playwright, MySQL  
-**Systems:** Linux, MacOS  
-**Soft skills:** Cross-functional collaboration, technical writing, documentation
+- **Languages:** Python, TypeScript, JavaScript, C, SQL
+- **Frameworks:** Django, NiceGUI  
+- **Tools:** Git, GitHub Actions, Playwright, MySQL  
+- **Systems:** Linux, MacOS  
+- **Soft skills:** Cross-functional collaboration, technical writing, documentation
 
 ## Contact
 
