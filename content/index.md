@@ -17,6 +17,7 @@ Now based in Tokyo, I'm building tools, contributing to open-source, and deepeni
 ## Projects
 
 ### Traktiv
+
 [TrakTiv](https://github.com/hybridgreen/traktiv)
 A wellness planning tool that integrates training load, recovery, and productivity into a single dashboard.  
 Built with NiceGUI and Python to streamline planning and reduce cognitive fatigue.

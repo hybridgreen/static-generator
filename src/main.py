@@ -47,7 +47,7 @@ def generate_page(from_path, template_path, dest_path, basepath):
         template = template.replace("{{ Title }}", title)
         template = template.replace("{{ Content }}", content)
         template = template.replace("href=\"/",f"href=\"{basepath}")
-        template = template.replace("src=\"/",f"src=\"{basepath}")
+        #template = template.replace("src=\"/",f"src=\"/")
         print ("Markdown extraction: Success!")
     except Exception as e:
         print("Markdown extraction: Failed")
