@@ -1,1 +1,1 @@
-python3 src/main.py "yass-yaya.dev/"
+python3 src/main.py "/yass-yaya.dev/"
